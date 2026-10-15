@@ -1,0 +1,135 @@
+.abovemain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.abovetexts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1px;
+    margin-top: 10px;
+}
+
+.aboveheader1 {
+    max-width: 350px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    font-size: 45px;
+    max-width: 500px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+.aboveimg {
+    position: relative;
+    right: 10px;
+    top: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.aboveparagraph {
+    max-width: 700px;
+    margin-left: 10px;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+p {
+    margin-top: 10px;
+}
+
+body {
+    background-color: rgb(212, 212, 212);
+}
+
+main {
+    background-color: var(--Lightgraycolor);
+    margin: 25px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+h1 {
+    margin: 0px;
+}
+
+.myprojects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    background-color: var(--Lightgraycolor);
+    padding: 10px 20px 0px 10px;
+    margin-right: 10px;
+    h1 {
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.spell1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    background-color: var(--Lightgraycolor);
+    padding: 10px 20px 0px 10px;
+    margin-right: 10px;
+    h1 {
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.spell2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        margin-right: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+        border: 2px solid black;
+    background-color: var(--Lightgraycolor);
+    padding: 10px 20px 0px 10px;
+        h1 {
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    img {
+        margin-top: 49px;
+    }
+}
+
+.undermain {
+    display: grid;
+    grid-template-columns: auto auto auto;
+     background-color: rgb(171, 171, 171);
+     margin-top: 50px;
+     border-top: 2px solid black;
+    img {
+        border: 2px solid rgb(0, 0, 0);
+    }
+}
+
+.lowermainparagraph {
+    font-size: 13px;
+    max-width: 450px;
+    font-size: 15px;
+}

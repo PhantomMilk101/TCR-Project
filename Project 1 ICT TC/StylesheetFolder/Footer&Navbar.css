@@ -1,0 +1,117 @@
+footer {
+    background-color: rgb(171, 171, 171);
+    margin: 25px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.leftfooter {
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    background-color: var(--Lightgraycolor);
+        p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.rightfooter {
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 8px;
+    background-color: var(--Lightgraycolor);
+        p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+header {
+    background-color: var(--Lightgraycolor);
+    margin: 25px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    position: sticky;
+    top: 5px;
+}
+
+ol, nav, li {
+    display: flex;
+    flex-direction: row; 
+    padding: 0px; 
+}
+
+li {
+    margin-left: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--Lightgraycolor);
+    padding: 3px;
+    padding-top: 1px;
+    a{
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+    }
+}
+
+.headerimg {
+    margin-left: 10px;
+    padding: 2px 2px;
+}
+
+header {
+    display: flex;
+}
+
+a:hover {
+    color: rgb(82, 82, 82);
+}
+
+a:visited {
+    color: rgb(82, 82, 82);
+}
+
+:root {
+    --Lightgraycolor: rgb(242, 242, 242);
+    --heightmed: 30px;
+    --widthmed: 30px;
+    --fontsizemed: 10px;
+    --footersizemed:8px;
+}
+
+@media screen and (max-width: 450px) {
+    .amed {
+        font-size: var(--fontsizemed);
+    }
+
+    .limed {
+        max-height: 13px;
+        margin-left: 7px;
+    }
+
+    .leftfooter > p {
+        font-size: var(--footersizemed);
+    }
+
+    .leftfooter {
+        margin-left: 10px;
+    }
+
+    .rightfooter > p {
+        font-size: var(--footersizemed);
+    }
+
+    .rightfooter {
+        margin-right: 10px;
+    }
+}
