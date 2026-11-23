@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(171, 171, 171);
+    background-color: var(--lowerdarkgraycolor);
     margin: 25px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 50px;
@@ -45,13 +45,13 @@ header {
     top: 5px;
 }
 
-ol, nav, li {
+ol, nav, li, .NavVis {
     display: flex;
     flex-direction: row; 
     padding: 0px; 
 }
 
-li {
+li, .NavVis {
     margin-left: 20px;
     border: 2px solid rgb(0, 0, 0);
     background-color: var(--Lightgraycolor);
@@ -64,9 +64,21 @@ li {
     }
 }
 
+.NavVis {
+    display: none;
+}
+
+.HeadVis {
+    max-width: 86px;
+}
+
 .headerimg {
     margin-left: 10px;
     padding: 2px 2px;
+    button {
+        border-color: transparent;
+        background-color: transparent;
+    }
 }
 
 header {
@@ -74,44 +86,92 @@ header {
 }
 
 a:hover {
-    color: rgb(82, 82, 82);
-}
-
-a:visited {
-    color: rgb(82, 82, 82);
+    color: var(--Darkgraycolor);
 }
 
 :root {
     --Lightgraycolor: rgb(242, 242, 242);
+    --Darkgraycolor: rgb(82, 82, 82);
+    --lowerdarkgraycolor: rgb(171, 171, 171);
     --heightmed: 30px;
     --widthmed: 30px;
     --fontsizemed: 10px;
     --footersizemed:8px;
 }
 
+.darkmode {
+    p {
+    color: white;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    td {
+        color: white;
+    }
+
+    .mainlinks {
+        a {
+        color: rgb(62, 253, 253);
+        }
+    }
+
+    --Lightgraycolor: rgb(96, 96, 96);
+    --lowerdarkgraycolor: rgb(24, 24, 24);
+    --Darkgraycolor: rgb(142, 142, 142);
+    background-color: var(--bodydarkmode);
+}
+
+:root {
+    --bodydarkmode: rgb(62, 62, 62);
+}
+
 @media screen and (max-width: 450px) {
-    .amed {
-        font-size: var(--fontsizemed);
+    .HeadVis {
+    max-width: 40px;
+    }
+
+    .headerimg {
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        padding: 2px 0px 2px 0px;
+        button {
+            padding: 1px 0px 1px 0px;
+        }
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    li {
+        margin-left: 1px;
+        padding-top: 0px;
+        padding: 1px;
+        font-size: 10px;
     }
 
     .limed {
         max-height: 13px;
-        margin-left: 7px;
-    }
-
-    .leftfooter > p {
-        font-size: var(--footersizemed);
+        margin-right: 0.5px;
     }
 
     .leftfooter {
-        margin-left: 10px;
-    }
-
-    .rightfooter > p {
-        font-size: var(--footersizemed);
+        margin-left: 5px;
+        max-width: 50px;
+        p {
+            font-size: var(--footersizemed);
+        }
     }
 
     .rightfooter {
-        margin-right: 10px;
+        margin-right: 5px;
+        max-width: 100px;
+        p {
+            font-size: var(--footersizemed);
+        }
     }
 }

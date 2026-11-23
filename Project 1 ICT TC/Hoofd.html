@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <link rel="stylesheet" href="StylesheetFolder/StylesheetHoofdpagina.css">
     <link rel="stylesheet" href="StylesheetFolder/Footer&Navbar.css">
     <link rel="icon" href="FotosFolder/PagNav&Footer/Logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoofdPagina</title>
+    <script src="Javascriptfolder/index.js"></script>
+    <script src="Javascriptfolder/jquery-4.0.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("img").mouseover(function(){
+            console.log("Hovered over image")
+        });
 
+        $("li").mouseover(function() {
+            console.log("Hovered over pages")
+        });
+    });
+    </script>
 </head>
 
-<body>
+<body class="darkmode" onload="BootingUp(), ModeCheck(), NavMenu()">
 
-<header>
+<header id="Heads" class="HeadVis">
 
     <div class="headerimg">
-        <img src="FotosFolder/PagNav&Footer/Logo.png" width="50px" height="50px" alt="Logo van website">
+        <button type="button" onclick="NavMenu()"><img src="FotosFolder/PagNav&Footer/Logo.png" width="50px" height="50px" alt="Logo van website" id="LogoDark"></button>
     </div> 
 
-    <nav>
+    <nav id="Navi" class="NavVis">
         <ol>
-            <li class="limed"><a href="Hoofd.html" class="amed">Hoofd</a></li>
-            <li class="limed"><a href="Pagina1.html" class="amed">Vaardigheden</a></li>
-            <li class="limed"><a href="Pagina2.html" class="amed">Contact</a></li>
-            <li class="limed"><a href="Pagina3.html" class="amed">Extra</a></li>
+            <li class="limed"><a href="Hoofd.html">Hoofd</a></li>
+            <li class="limed"><a href="Pagina1.html">Vaardigheden</a></li>
+            <li class="limed"><a href="Pagina2.html">Contact</a></li>
+            <li class="limed"><a href="Pagina3.html">Extra</a></li>
         </ol>
     </nav>
 
@@ -45,7 +56,7 @@
             Mijn hobby's zijn gamen en soms basketballen en soms ga ik ook naar sportschool toe. 
         </p>
     </div>
-    <img src="FotosFolder/Paghoofd/Rafael3.jpg" class="aboveimg" width="600px" height="700px" alt="Rafael">
+    <img src="FotosFolder/Paghoofd/Rafael3.jpg" class="aboveimg" id="hoverlog" width="600px" height="700px" alt="Rafael">
 </div>
 
 <div class="undermain">
@@ -81,6 +92,8 @@
         </p>
     </div>
 </div>
+
+<button type="button" onclick="SwitchMode()">Toggle darkmode</button>
 
 </main>
 

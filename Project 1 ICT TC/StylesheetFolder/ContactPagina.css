@@ -31,7 +31,7 @@ main {
 }
 
 .lowermain {
-    background-color: rgb(171, 171, 171);
+    background-color: var(--lowerdarkgraycolor);
     border-top: 2px solid black;
     padding-left: 25px;
     display: flex;
@@ -62,6 +62,73 @@ main {
             margin-right: 10px;
             margin-bottom: 0px;
             padding-bottom: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .abovemain {
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+        .d1 {
+        margin-top: 0px;
+        margin-left: 15px;
+        font-size: 7px;
+            p {
+                max-width: 100px;
+            }
+        }
+
+        .d2 {
+            height: 80px;
+            margin-top: 0px;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    .lowermain {
+        padding-left: 5px;
+        .c1 {
+            min-height: 40px;
+            min-width: 70px;
+            padding: 0px 10px 0px 10px;
+            p {
+                font-size: 7px;
+            }
+        }
+
+        .c2 {
+            padding: 10px 45px 0px 25px;
+            margin: 10px 0px 10px 0px;
+            min-height: 120px;
+            form {
+                min-height: 80px;
+                width: 30px;
+                p{
+                    font-size: 7px;
+                    size: 10px;
+                    input {
+                        max-width: 50px;
+                        max-height: 15px;
+                        font-size: 7px;
+                    }
+                }
+
+                h1 {
+                    font-size: 5px;
+                }
+            }
+        }
+        p {
+            max-height: 20px;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 14px;
         }
     }
 }

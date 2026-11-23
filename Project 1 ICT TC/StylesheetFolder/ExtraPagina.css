@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    background-color: rgb(242, 242, 242);
+    background-color: var(--Lightgraycolor);
     margin: 25px;
     border: 2px solid rgb(0, 0, 0);
 }
@@ -66,13 +66,13 @@ padding-top: 30px;
     padding-bottom: 40px;
     padding-top: 20px;
     padding-left: 20px;
-    background-color: rgb(171, 171, 171);
+    background-color: var(--lowerdarkgraycolor);
 }
 
 .lowertabel {
     margin-top: 15px;
     margin-bottom: 20px;
-    min-width: 800px;
+    min-width: 900px;
     table{ 
         width: 500px;
         border: 2px solid black;
@@ -81,6 +81,7 @@ padding-top: 30px;
             
             border: 2px solid black;
             width: 10px;
+            width: 0%;
             
         }
     }
@@ -91,7 +92,7 @@ padding-top: 30px;
 }
 
 .backtabel {
-    background-color: rgb(199, 199, 199);
+    background-color: var(--lowerdarkgraycolor);
 }
 
 
@@ -105,4 +106,93 @@ padding-top: 30px;
     padding-left: 10px;
     width: 100px;
     height: 150px;
+}
+
+@media screen and (max-width: 450px) {
+    .abovemain {
+        padding: 10px 0px 15px 0px;
+        .d1 {
+            margin-left: 10px;
+            font-size: 7px;
+        }
+
+        img {
+            margin-right: 10px;
+            width: 100px;
+            height: 70px;
+        }
+    }
+    .middelmain { 
+        padding-top: 10px;
+        .leftPH  {
+            margin-left: 10px;
+            .e1 {
+                p {
+                    font-size: 7px;
+                    }
+
+                h1 {
+                    font-size: 7px;
+                    }
+                }
+
+            .e2 {
+                p {
+                    font-size: 7px;
+                    }
+
+                h1 {
+                    font-size: 7px;
+                    }
+                }
+
+            .e3 {
+                p {
+                    font-size: 7px;
+                    }
+
+                h1 {
+                    font-size: 7px;
+                    }
+                }
+            }
+    }
+
+    .rightIMG {
+        margin-right: 10px;
+        img {
+            width: 100px;
+            height: 70px;
+            
+        }
+    }
+
+    .lowermain {
+        align-items: center;
+        margin-top: 10px;
+        padding: 10px 0px 10px 0px;
+        .lowertabel {
+            min-width: 0px;
+            margin: 0px 0px 0px 0px;
+            table {
+                margin-left: 5px;
+                max-width: 10px;
+                min-height: 10px;
+            }
+        }
+
+        .mainlinks {
+            justify-content: center;
+            max-width: 80px;
+            max-height: 100px;
+            h1 {
+                margin-top: 0px;
+                font-size: 14px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
 }

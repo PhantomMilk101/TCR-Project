@@ -66,7 +66,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(171, 171, 171);
+    align-items: center;
+    background-color: var(--lowerdarkgraycolor);
     border-top: 2px solid black;
     padding-top: 30px;
     margin-top: 50px;
@@ -74,7 +75,7 @@ main {
 }
 
 .d1 {
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -84,87 +85,68 @@ main {
     border-radius: 50px;
     background-color: var(--Lightgraycolor);
     padding: 0 20px 0px 20px;
+    max-width: 700px;
 }
 .d2 {
     border: 2px solid black;
     max-height: 300px;
 }
 
-@media screen and (max-width: 450px) {
-main {
-    max-width: 100%;
-}
-
-.d1 {
-    max-width: 110px;
-    max-height: 190px;
-    
-        h1 {
-            font-size: 9px;
-        }
-    
-        p {
-            font-size: 9px;
-        }
-    }
-
-.d2 {
-    border: 0px;
-        img {
-            max-width: 150px;
-            max-height: 150px;
-        }
-    }
-
-.V1 { 
-    h1 {
-        font-size: var(--fontsizemed);
-    }
-
-    p {
-        font-size: var(--fontsizemed);
-    }
-
-    img {
-        max-width: var(--widthmed);
-        max-height: var(--heightmed);
-    }
-}
-
-.V2 {
-    h1 {
-        font-size: var(--fontsizemed);
-    }
-
-    p {
-        font-size: var(--fontsizemed);
-    }
-
-    img {
-        max-width: var(--widthmed);
-        max-height: var(--heightmed);
-    }
-}
-
-.V3 {
-    h1 {
-        font-size: var(--fontsizemed);
-    }
-
-    p {
-        font-size: var(--fontsizemed);
-    }
-
-    img {
-            max-width: var(--widthmed);
-        max-height: var(--heightmed);
-    }
-}
-
-}
-
 :root {
     --heightmed: 30px;
     --widthmed: 30px;
-    --fontsizemed: 10px;
+    --fontsizemeds: 10px;
+    --fontsizeh1: 10px;
+}
+
+@media screen and (max-width: 450px) {
+    .PagTitel {
+        font-size: 35px;
+        margin: 20px 0px 15px 0px;
+    }
+
+    .abovemain {
+        margin: 10px 0px 10px 0px;
+        .Vimages {
+            width: 50px;
+            height: 50px;
+        }
+        p {
+            font-size: 9px;
+        }
+
+        h1 {
+            font-size: 10px;
+        }
+        .V1 {
+            margin-left: 5px;
+        }
+
+        .V3 {
+            margin-right: 5px;
+        }
+    }
+
+    .lowermain {
+        margin: 10px 0px 0px 0px;
+        button {
+            max-width: 50px;
+            max-height: 50px;
+        }
+        .d1 {
+        margin-top: 0px;
+        font-size: 5px;
+            p {
+                max-width: 100px;
+            }
+        }
+
+        .d2 {
+            height: 50px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
 }
