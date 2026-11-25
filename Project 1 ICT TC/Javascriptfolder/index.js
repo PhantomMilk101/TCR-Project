@@ -4,12 +4,12 @@ function SwitchMode() {
     element.classList.toggle("darkmode");
     console.log("Switched modes")
     if (Mode == "on") {
-    localStorage.setItem("Dmode", "off")
-    console.log("Set mode to darkmode")
+        localStorage.setItem("Dmode", "off")
+        console.log("Set mode to darkmode")
     }
     else if (Mode == "off") {
-    localStorage.setItem("Dmode", "on")
-    console.log("Set mode to lightmode")
+        localStorage.setItem("Dmode", "on")
+        console.log("Set mode to lightmode")
     }
 }
 function ModeCheck() {
@@ -80,5 +80,24 @@ function NavMenu() {
     Element.classList.toggle("NavVis");
     SecElement.classList.toggle("HeadVis");
     console.log("Hamburger Menu");
+}
+
+function CountDown() {
+    var countDownDate = new Date("Dec 18, 2026 12:45:00").getTime();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var timeuntil = countDownDate - now;
+        var now = new Date().getTime();
+        var timeuntil = countDownDate - now;
+        var days = Math.floor(timeuntil / (1000 * 60 * 60 * 24)) + "d";
+        var hours = Math.floor((timeuntil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + "h";
+        var minutes = Math.floor((timeuntil % (1000 * 60 * 60)) / (1000 * 60)) + "m";
+        var seconds = Math.floor((timeuntil % (1000 * 60)) / 1000) + "s";
+        document.getElementById("CountDownTekst").innerHTML = days + " " + hours + " " + minutes + " " + seconds;
+        if (timeuntil < 0) {
+            clearInterval(x);
+            document.getElementById("CountDownTekst").innerHTML = "Klaar";
+        }
+    }, 100);
 }
 

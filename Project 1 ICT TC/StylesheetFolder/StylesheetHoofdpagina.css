@@ -36,6 +36,16 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#CountAnnoucer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#CountDownTekst {
+    display: flex;
+    justify-content: center;
+}
 
 p {
     margin-top: 10px;
